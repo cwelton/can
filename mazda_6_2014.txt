@@ -1,0 +1,372 @@
+00000050 02000f02aa55aafb Baseline
+
+00000078 dfxxfxx098c3x0xx Baseline
+00000078 0000000fff000000 - Brake pressure
+
+00000079 dfxx0001fxx1cxxx Baseline
+00000082 0000fffc80200000 Baseline
+
+00000086 3e7dxxxxffexxxx0 Baseline
+00000086 ffffff0000000000 - Stearing wheel angle
+
+00000091 0 0x80 -- Unknown (Baseline on)
+00000091 0 0x40 -- Unknown (Baseline on)
+00000091 0 0x20 Fog Lights On
+00000091 0 0x10 Lights On
+00000091 0 0x08 High Beam engaged (lights not necessarily on)
+00000091 0 0x04 -- Unknown (Baseline off)
+00000091 0 0x02 -- Unknown (Baseline off)
+00000091 0 0x01 -- Unknown (Baseline off)
+00000091 1 0x80 High Beam flash (pull wand forward)
+00000091 1 0x40 Lights are off
+00000091 1 0x20 Left Turn Signal engaged
+00000091 1 0x10 Right Turn Signal engaged
+00000091 1 0x08 -- Unknown (Baseline off)
+00000091 1 0x04 Hazard Signal engaged
+00000091 1 0x02 -- Unknown (Baseline off)
+00000091 1 0x01 -- Unknown (Baseline off)
+00000091 2 0x80 -- Unknown (Baseline on)
+00000091 2 0x40 -- Unknown (Baseline on)
+00000091 2 0x30 Wipers Intermittent
+00000091 2 0x20 Wipers Hi 
+00000091 2 0x10 Wipers Lo or Wipers on single up tap
+00000091 2 0x80 -- Unknown (Baseline off)
+00000091 2 0x40 -- Unknown (Baseline off)
+00000091 2 0x02 Windshield mist
+00000091 2 0x01 -- Unknown (Baseline off)
+00000091 3 0xf0 -- Unknown (Baseline off)
+00000091 3 0x0f -- Unknown (Baseline variable)
+00000091 4 0x80 -- Unknown (Baseline off)
+00000091 4 0x30 Lights off *
+00000091 4 0x40 Lights on *
+00000091 4 0x50 Fog lights on *
+                * subtract 0x10 (blinks) when high beams engaged
+				* subtract 0x10 (blinks) when hazard lights engaged (different blink pattern)
+				* subrtact 0x10 when right turn signal engaged
+				* subtract 0x20 when left turn signal engaged
+00000091 4 0x0f -- Unknown (Baseline variable)
+00000091 5 0xff -- Unknown (Baseline off)
+00000091 6 0xff Wiper speed setting
+                    00 = fast
+			        1e = medium-fast
+			        32 = medium
+		   	        46 = medium-slow
+			        5a = slow
+00000091 7 0xff -- Unknown (Baseline off)
+
+0000009a 0 0xc0 - High Lights on (lights+high engaged, or high beam flash)
+0000009a 0 0x20 - Lights (fog or regular) 
+0000009a 0 0x10 - Lights on 
+0000009a 0 0x0f -- Unknown (Baseline off)
+0000009a 1 0xff -- Unknown (Baseline off)
+0000009a 2 0xf0 -- Unknown (Baseline off)
+0000009a 2 0x08 - Right Turn Light / Hazard Light on (pulses)
+0000009a 2 0x04 - Left Turn Light / Hazard Light on (pulses)
+0000009a 2 0x02 - Any lights on (fog, regular, high, but not high beam flash)
+0000009a 2 0x01 -- Unknown (Baseline off)
+0000009a 3 0xff -- Unknown (Baseline off)
+0000009a 4 0x80 -- Unknown (Baseline on)
+0000009a 4 0x40 -- Unknown (Baseline off)
+0000009a 4 0x20 -- Unknown (Baseline off)
+0000009a 4 0x10 -- Unknown (Baseline off)
+0000009a 4 0x08 -- Unknown (Baseline on)
+0000009a 4 0x04 - Active when wipers are in motion (Only Hi)
+0000009a 4 0x02 - Active when wipers are in motion (Except Hi)
+0000009a 4 0x01 -- Unknown (Baseline off)
+0000009a 5 0xff -- Unknown (Baseline off)
+0000009a 6 0xf0 -- Unknown (Baseline off)
+0000009a 6 0x08 -- Unknown (Baseline off)
+0000009a 6 0x04 -- Unknown (Baseline off)
+0000009a 6 0x02 -- Unknown (Baseline on)
+0000009a 6 0x01 -- Unknown (Baseline on)
+0000009a 7 0xff -- Unknown (Baseline off)
+
+0000009b 0 0x80 -- Unknown (Baseline off)
+0000009b 0 0x40 -- Unknown (Baseline off)
+0000009b 0 0x20 Rear Defroster
+0000009b 0 0x10 Rear Defroster
+0000009b 0 0x08 -- Unknown (Baseline off)
+0000009b 0 0x04 -- Unknown (Baseline off)
+0000009b 0 0x02 -- Unknown (Baseline on)
+0000009b 0 0x01 -- Unknown (Baseline off)
+0000009b 1 0xff -- Unknown (Baseline off)
+0000009b 2 0xe0 -- Unknown (Baseline off)
+0000009b 2 0x10 -- Unknown (Baseline on)
+0000009b 2 0x08 -- Unknown (Baseline off)
+0000009b 2 0x04 -- Unknown (Baseline on)
+0000009b 2 0x02 -- Unknown (Baseline off)
+0000009b 2 0x01 -- Unknown (Baseline off)
+0000009b 3 0xff -- Unknown (Baseline off)
+0000009b 4 0xff -- Unknown (Baseline off)
+0000009b 5 0xff -- Unknown (Baseline off)
+0000009b 6 0xff -- Unknown (Baseline off)
+0000009b 7 0xff -- Unknown (Baseline off)
+
+0000009d 0 0x80 -- Unknown (Baseline off)
+0000009d 0 0x40 -- Unknown (Baseline off)
+0000009d 0 0x20 Cruise Control '-' button actively pressed
+0000009d 0 0x10 Cruise Control '+' button actively pressed
+0000009d 0 0x08 -- Unknown (Baseline off)
+0000009d 0 0x04 Cruise Control 'Resume' button actively pressed
+0000009d 0 0x02 Cruise Control 'Cancel' button actively pressed
+0000009d 0 0x01 -- Unknown (Baseline off)
+0000009d 1 0x80 -- Unknown (Baseline off)
+0000009d 1 0x40 Cruise Control 'Off' button actively pressed
+0000009d 1 0x20 Cruise Control 'On' button actively pressed
+0000009d 1 0x10 -- Unknown (Baseline off)
+0000009d 1 0x08 -- Unknown (Baseline off)
+0000009d 1 0x04 -- Unknown (Baseline off)
+0000009d 1 0x02 -- Unknown (Baseline off)
+0000009d 1 0x01 -- Unknown (Baseline on)
+0000009d 2 0x80 -- Unknown (Baseline on)
+0000009d 2 0x40 Cruise Control '-' button not actively pressed    ** Verify
+0000009d 2 0x20 Cruise Control '+' button not actively pressed    ** Verify
+0000009d 2 0x10 -- Unknown (Baseline on)
+0000009d 2 0x08 Cruise Control 'Resume' button not actively pressed  ** Verify
+0000009d 2 0x04 Cruise Control 'Cancel' button not actively pressed  ** Verify
+0000009d 2 0x02 -- Unknown (Baseline on)
+0000009d 2 0x01 -- Unknown (Baseline on)
+0000009d 3 0x80 Cruise Control 'Off' button not actively pressed    ** Verify
+0000009d 3 0x40 Cruise Control 'On' button not actively pressed    ** Verify
+0000009d 3 0x20 -- Unknown (Baseline Variable)
+0000009d 3 0x10 -- Unknown (Baseline Variable)
+0000009d 3 0x0f -- Unknown (Baseline Variable)
+0000009d 4 0xff -- Unknown (Baseline Off)
+0000009d 5 0xff -- Unknown (Baseline Off)
+0000009d 6 0xff -- Unknown (Baseline Off)
+0000009d 7 0xff -- Unknown (Baseline Off)
+
+0000009f 40 64 05 04 84 02 xx 00 Baseline
+0000009f 0 0x80 -- Unknown (Baseline Off)
+0000009f 0 0x40 -- Unknown (Baseline On)
+0000009f 0 0x20 -- Unknown (Baseline Off)
+0000009f 0 0x10 Parking Brake engaged
+0000009f 0 0x08 Fog/Lights/High beams on
+0000009f 0 0x04 -- Unknown (Baseline Off)
+0000009f 0 0x02 -- Unknown (Baseline Off)
+0000009f 0 0x01 -- Unknown (Baseline Off)
+0000009f 1 0x80 -- Unknown (Baseline Off)
+0000009f 1 0x40 -- Unknown (Baseline On)
+0000009f 1 0x20 -- Unknown (Baseline On)
+0000009f 1 0x10 -- Unknown (Baseline Off)
+0000009f 1 0x08 -- Unknown (Baseline Off)
+0000009f 1 0x04 -- Unknown (Baseline On)
+0000009f 1 0x02 -- Unknown (Baseline Off)
+0000009f 1 0x01 -- Unknown (Baseline Off)
+0000009f 2 0xf0 -- Unknown (Baseline Off)
+0000009f 2 0x08 -- Unknown (Baseline Off)
+0000009f 2 0x04 -- Unknown (Baseline On)
+0000009f 2 0x02 -- Unknown (Baseline Off)
+0000009f 2 0x01 -- Unknown (Baseline On)
+0000009f 3 0xf0 -- Unknown (Baseline Off)
+0000009f 3 0x08 -- Unknown (Baseline Off)
+0000009f 3 0x04 -- Unknown (Baseline On)
+0000009f 3 0x02 -- Unknown (Baseline Off)
+0000009f 3 0x01 -- Unknown (Baseline Off)
+0000009f 4 0x80 -- Unknown (Baseline On)
+0000009f 4 0x40 -- Unknown (Baseline Off)
+0000009f 4 0x20 -- Unknown (Baseline Off)
+0000009f 4 0x10 -- Unknown (Baseline Off)
+0000009f 4 0x08 -- Unknown (Baseline Off)
+0000009f 4 0x04 -- Unknown (Baseline On)
+0000009f 4 0x02 -- Unknown (Baseline Off)
+0000009f 4 0x01 -- Unknown (Baseline Off)
+0000009f 5 0xf0 -- Unknown (Baseline Off)
+0000009f 5 0x08 -- Unknown (Baseline Off)
+0000009f 5 0x04 -- Unknown (Baseline Off)
+0000009f 5 0x02 Passenger Weight Sensor     ** Verify
+0000009f 5 0x01 Passenger Weight Senson (After some time)  ** Verify
+
+
+000000fd 6300x0001e001x00 Baseline
+00000130 00010030000xxxff Baseline
+00000131 0001000000000000 Baseline
+
+00000165 408015e5e0000dxx Baseline
+00000165 0600000000000000 - Cruise Control
+00000165 c000000000000000 - Brake very very lightly pressed
+00000165 d180000000000000 - Brake pressed
+
+00000166 0030000000000000 Baseline
+
+00000167 003034x03df80000 Baseline
+00000167 00000c0000000000 - Brake very very lightly pressed
+00000167 00000d0000000000 - Brake pressed
+
+00000200 xxxxxxxxxxxx0xxx Baseline
+
+00000201 0-1 0xffff RPM
+00000201 2-3 0xffff -- Unknown
+00000201 4-5 0xffff Vehicle Speed in 100 km/h
+00000201 6 0xff Accelerator Pedal Position, 200 is fully depressed
+00000201 7 0xff -- Unknown
+
+00000202 0xxx0000000018xx Baseline
+00000211 fffefffexxx00000 Baseline
+00000215 2710271027102710 Baseline
+
+00000240 ffff0000ff000100 - Delta between steering wheel angle and wheel angle?? ** Verify
+00000240 0 0x80 -- Unknown (Baseline on)
+00000240 0 0x40 -- Unknown (Baseline off)
+00000240 0 0x20 -- Unknown (Baseline off)
+00000240 0 0x10 -- Unknown (Baseline off)
+00000240 0 0x08 -- Unknown (Baseline off)
+00000240 0 0x04 -- Unknown (Baseline off)
+00000240 0 0x02 Voice Control button actively pressed
+00000240 0 0x01 -- Unknown (Baseline off)
+00000240 1-3 0xff -- Unknown (Baseline off)
+00000240 4 0x80 -- Unknown (Baseline off)
+00000240 4 0x7f -- Unknown (Baseline on)
+00000240 5 0xff -- Unknown (Baseline on)
+00000240 6 0xfe -- Unknown (Baseline on)
+00000240 6 0x01 -- Unknown (Baseline off)
+00000240 7 0xe0 -- Unknown (Baseline on)
+000002f0 7 0x10 -- Unknown (Baseline off)
+000002f0 7 0x0f -- Unknown (Baseline off)
+
+
+00000274 0-3 0xffffffff -- Unknown (Baseline off)
+00000275 4 0xff -- Unknown (Baseline off)
+00000275 5 0xf0 -- Unknown (Baseline off)
+00000275 5 0x08 -- Unknown (Baseline off)
+00000275 5 0x04 -- Unknown (Baseline on)
+00000275 5 0x02 -- Unknown (Baseline off)
+00000275 5 0x01 -- Unknown (Baseline off)
+00000275 6 0xf0 -- Unknown (Baseline off)
+00000275 6 0x08 -- Unknown (Baseline off)
+00000275 6 0x04 -- Unknown (Baseline off)
+00000275 6 0x02 -- Unknown (Baseline on)
+00000275 6 0x01 -- Unknown (Baseline off)
+00000275 7 0x80 -- Unknown (Baseline off)
+00000275 7 0x40 -- Unknown (Baseline off)
+00000275 7 0x20 Info down button actively pressed
+00000275 7 0x10 Info up button actively pressed
+00000275 7 0xff -- Unknown (Baseline off)
+ 
+00000340 0 0x80 -- Unknown (Baseline off)
+00000340 0 0x40 -- Unknown (Baseline on)
+00000340 0 0x20 -- Unknown (Baseline on)
+00000340 0 0x10 -- Unknown (Baseline off)
+00000340 0 0x08 -- Unknown (Baseline on)
+00000340 0 0x07 -- Unknown (Baseline off)
+00000340 1 0xff -- Unknown (Baseline Variable)
+00000340 2 0xf0 -- Unknown (Baseline Variable)
+00000340 2 0x0e -- Unknown (Baseline off)
+00000340 2 0x01 Passenger Weight Sensor (After Delay)  ** Verify
+00000340 3 0xf0 Passenger Weight Sensor, delayed       ** Verify
+00000340 3 0x08 Driver's Seat Belt
+00000340 3 0x04 Passenger's Seat Belt
+00000340 3 0x02 -- Unknown (Baseline off)
+00000340 3 0x01 -- Unknown (Baseline off)
+00000340 4 0xf0 -- Unknown (Baseline off)
+00000340 4 0x0f -- Unknown (Baseline variable)
+
+0000040a xxxxxxxxxxxxxxxx - Baseline
+
+00000415 0 0xff -- Unknown (Baseline off)
+00000415 1 0x80 -- Unknown (Baseline off)
+00000415 1 0x40 -- Unknown (Baseline off)
+00000415 1 0x20 -- Unknown (Baseline off)
+00000415 1 0x10 -- Unknown (Baseline on)
+00000415 1 0x08 -- Unknown (Baseline variable)
+00000415 1 0x04 -- Unknown (Baseline variable)
+00000415 1 0x02 Brake Pressed                      ** Verify
+00000415 1 0x01 Brake Pressed                      ** Verify
+00000415 2 0xff -- Unknown (Baseline variable)
+00000415 3 0xff -- Unknown (Baseline off)
+00000415 4 0xff -- Unknown (Baseline on)
+00000415 5 0xff -- Unknown (Baseline off)
+00000415 6 0xff -- Unknown (Baseline variable)
+00000415 7 0xff -- Unknown (Baseline off)
+
+00000420 7e00xx330100f25c - Baseline
+
+0000042b xxxxffffc0000000 - Baseline
+0000042b 2810000000000000 - Turns on when fan causes more car noise
+
+00000436 0 0xf0 -- Unknown (Baseline off)
+00000436 0 0x80 -- Unknown (Baseline off)
+00000436 0 0x40 Fan On (All Speeds, but sometimes turns off?)
+00000436 0 0x20 Fan On (Speeds 4-7, but sometimse turns off?)
+00000436 0 0x10 Fan On (Speeds 4-7, but sometimse turns off?)
+00000436 1 0x80 -- Unknown (Baseline off)
+00000436 1 0x40 Fan Speed 7
+00000436 1 0x20 Fan Speeds 3-6
+00000436 1 0x10 Fan Speeds 1-2, 5-6
+00000436 1 0x08 Fan Speeds 1,3,5,7
+00000436 1 0x04 -- Unknown (Baseline off)
+00000436 1 0x02 -- Unknown (Baseline off)
+00000436 1 0x01 Sometimes on when the fan is on *At different times form 0 0x70
+00000436 2 0x80 Sometimes on when the fan is on *At different times form 0 0x70
+00000436 2 0x40 -- Unknown (Baseline off)
+00000436 2 0x20 -- Unknown (Baseline off)
+00000436 2 0x10 -- Unknown (Baseline off)
+00000436 2 0x0f -- Unknown (Baseline off)
+00000436 3 0xff -- Unknown (Baseline variable)
+00000436 4 0xff -- Unknown (Baseline variable)
+00000436 5 0xff -- Unknown (Baseline off)
+00000436 6 0xff -- Unknown (Baseline off)
+00000436 7 0xfe -- Unknown (Baseline off)
+00000436 7 0x01 -- Unknown (Baseline variable)
+
+
+0000043e 0 0xff -- Unknown (Baseline off)
+0000043e 1 0xf0 -- Unknown (Baseline off)
+0000043e 1 0x0f -- Unknown (Baseline variable)
+0000043e 2 0xf0 -- Unknown (Baseline on)
+0000043e 2 0x0f -- Unknown (Baseline variable)
+0000043e 3 0x80 -- Unknown (Baseline off)
+0000043e 3 0x40 Door Open (Any)
+0000043e 3 0x20 -- Unknown (Baseline on)
+0000043e 3 0x10 -- Unknown (Baseline off)
+0000043e 3 0x0f -- Unknown (Baseline off)
+0000043e 4 0x80 -- Unknown (Baseline on)
+0000043e 4 0x40 -- Unknown (Baseline on)
+0000043e 4 0x20 Driver Door Open
+0000043e 4 0x10 Passenger Door Open
+0000043e 4 0x08 Rear Left Door Open
+0000043e 4 0x04 Rear Right Door Open
+0000043e 4 0x02 -- Unknown (Baseline on)
+0000043e 4 0x01 -- Unknown (Baseline off)
+0000043e 5 0x80 -- Unknown (Baseline off)
+0000043e 5 0x40 -- Unknown (Baseline off)
+0000043e 5 0x20 -- Unknown (Baseline on)
+0000043e 5 0x10 -- Unknown (Baseline on)
+0000043e 5 0x08 -- Unknown (Baseline on)
+0000043e 5 0x04 -- Unknown (Baseline off)
+0000043e 5 0x02 -- Unknown (Baseline off)
+0000043e 5 0x01 -- Unknown (Baseline off)
+0000043e 6 0xf0 -- Unknown (Baseline off)
+0000043e 6 0x08 -- Unknown (Baseline on)
+0000043e 6 0x04 -- Unknown (Baseline off)
+0000043e 6 0x02 -- Unknown (Baseline off)
+0000043e 6 0x01 -- Unknown (Baseline off)
+0000043e 7 0x80 -- Unknown (Baseline off)
+0000043e 7 0x40 -- Unknown (Baseline off)
+0000043e 7 0x20 -- Unknown (Baseline on)
+0000043e 7 0x10 -- Unknown (Baseline off)
+0000043e 7 0x0f -- Unknown (Baseline off)
+
+
+00000454 3058314431353336 - Baseline
+0000045a ffffffffffffffff - Baseline
+0000045b 0xxxxxxxxxxxxxxf - Baseline
+0000045c f000ffffffff8000 - Baseline
+00000482 0028000000000000 - Baseline
+0000048b 0000240000000000 - Baseline
+000004d0 0000000000000000 - Baseline
+000004d1 000000007ef40000 - Baseline
+000004d2 0000000000000000 - Baseline
+000004d3 0000000000004000 - Baseline
+000004d4 0000000000000000 - Baseline
+000004d5 0000000000000000 - Baseline
+000004d6 0000000000000000 - Baseline
+000004f0 191b017d40000000 - Baseline
+000004fa 000000016a000000 - Baseline
+00000581 0100aa55aa55aa55 - Baseline
+00000588 0800aa55aa55aa55 - Baseline
+00000591 1100aa55aa55aa55 - Baseline
+00000596 1600ffffffffffff - Baseline
+000005a0 2000aa55aa55aa55 - Baseline
+
+
